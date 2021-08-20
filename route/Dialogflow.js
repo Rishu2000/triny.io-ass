@@ -48,4 +48,11 @@ dialog.get('/', (req, res) => {
     res.json('You are in dialogflow module.')
 })
 
+dialog.post('/', async (req, res) => {
+
+    const {languageCode, queryText, sessionId} = req.body;
+    const responseData = await detectIntent(languageCode, queryText, sessionId);
+    res.send(responseData.response);
+})
+
 module.exports = dialog;
