@@ -1,7 +1,6 @@
 const express = require('express');
 const dialog = express();
 const dialogflow = require('@google-cloud/dialogflow');
-require('dotenv').config();
 const CREDENTIALS = require('../data/DialogflowData');
 
 const PROJECTID = CREDENTIALS.project_id;
