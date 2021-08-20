@@ -10,7 +10,7 @@ const [dialogRes, setDialogRes] = useState(null);
 
 const handleSubmit = (e) => {
   e.preventDefault();
-  axios.post('http://localhost:4002/dialogflow',{queryText,sessionId})
+  axios.post('https://triny-ass.herokuapp.com/dialogflow',{queryText,sessionId})
   .then((res) => {
     setDialogRes(res.data);
   })
