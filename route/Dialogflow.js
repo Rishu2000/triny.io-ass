@@ -51,7 +51,7 @@ dialog.post('/', async (req, res) => {
 
     const {queryText, sessionId} = req.body;
     const responseData = await detectIntent("en", queryText, sessionId);
-    res.send(responseData.response);
+    res.json(responseData.response);
 })
 
 module.exports = dialog;
