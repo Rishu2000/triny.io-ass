@@ -41,6 +41,10 @@ const detectIntent = async (languageCode, queryText, sessionId) => {
     }
 }
 
+dialog.use(express.urlencoded({
+    extended:true
+}))
+
 dialog.get('/', (req, res) => {
     res.json('You are in dialogflow module.')
 })
