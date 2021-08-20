@@ -33,6 +33,8 @@ const detectIntent = async (languageCode, queryText, sessionId) => {
     }
 
     const responses = await sessionClient.detectIntent(request);
+
+    const result = responses[0].queryResult;
 }
 
 dialog.get('/', (req, res) => {
