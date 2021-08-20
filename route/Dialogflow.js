@@ -13,6 +13,9 @@ const CONFIGURATION = {
         client_email: CREDENTIALS['client_email'],
     }
 }
+
+const sessionClient = new dialogflow.SessionsClient(CONFIGURATION);
+
 dialog.get('/', (req, res) => {
     res.json('You are in dialogflow module.')
 })
