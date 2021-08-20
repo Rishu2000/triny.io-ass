@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Rishu2000/triny.io-ass/issues"
   },
-  "homepage": "https://github.com/Rishu2000/triny.io-ass#readme"
+  "homepage": "https://github.com/Rishu2000/triny.io-ass#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
